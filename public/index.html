@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Conversor Dolar</title>
+</head>
+<body>
+    <main>
+        <h1 id="title">Dolar</h1>
+        <a href="index.html">
+            <input type="button" id="usd" value="">
+        </a>
+        <a href="euro.html">
+            <input type="button" id="eur" value="">
+        </a>
+        <a href="btc.html">
+            <input type="button" id="btc" value="">
+        </a>
+        <h3>Converter</h3>
+        <p>Cotação atual do Dolar é: <span id="cotacao"></span></p>
+        <div id="caixa" class="container">
+            <input id="value" placeholder="Amount" type="text" oninput="conversorDolar(this)">
+            <div id="resultDiv">
+                <h2 id="result" ></h2>
+            </div>
+        </div>
+    </main>
+<script src="../src/app.js"></script>    
+</body>
+</html>

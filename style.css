@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;;
+}
+
+@keyframes colors {
+    0% {
+        color: rgb(1, 214, 1);
+    }
+    25% {
+        color: rgb(62, 105, 62);
+    }
+    50% {
+        color: rgb(1, 214, 1);
+    }
+    75% {
+        color: rgb(62, 105, 62);
+    }
+    100% {
+        color: rgb(1, 214, 1);
+    }
+}
+
+@keyframes shadowColor {
+    0% {
+        text-shadow: 0 0 50px rgb(1, 214, 1);
+    }
+    25% {
+        text-shadow: 0 0 50px rgb(62, 105, 62);
+    }
+    50% {
+        text-shadow: 0 0 50px rgb(1, 214, 1);
+    }
+    75% {
+        text-shadow: 0 0 50px rgb(62, 105, 62);
+    }
+    100% {
+        text-shadow: 0 0 50px rgb(1, 214, 1);
+    }
+}
+
+@keyframes borderShadow {
+    0% {
+        box-shadow: 0 0 50px rgb(1, 214, 1);
+    }
+    25% {
+        box-shadow: 0 0 50px rgb(62, 105, 62);
+    }
+    50% {
+        box-shadow: 0 0 50px rgb(1, 214, 1);
+    }
+    75% {
+        box-shadow: 0 0 50px rgb(62, 105, 62);
+    }
+    100% {
+        box-shadow: 0 0 50px rgb(1, 214, 1);
+    }
+}
+
+main {
+    margin: auto;
+    width: 600px;
+}
+
+h1 {
+    font-size: 70px;
+    animation: shadowColor 5s infinite;
+    animation-timing-function: linear;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+h3 {
+    display: block;
+    font-size: 35px;
+    margin-top: 100px;
+    padding: 0;
+    animation: colors 5s infinite;
+}
+
+#value {
+    font-size: 20px;
+    color: black;
+    height: 45px;
+    background-color: rgb(17, 163, 17);
+    border-radius: 5px;
+    border: none;
+}
+
+#value:focus {
+   outline: none;
+   border: none;
+}
+
+#value::placeholder{
+    color: rgb(87, 84, 84);
+}
+
+#resultDiv {
+    box-sizing: border-box;
+    margin-left: 25px;
+    width: 300px;
+    height: 45px;
+    border: 1px solid rgb(17, 163, 17);
+    border-radius: 5px;
+    animation: borderShadow 5s infinite;
+}
+
+#result {
+    line-height: 15px;
+    font-size: 20px;
+}
+
+#value, #result {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#usd {
+    background-color: rgb(14, 131, 131);
+    margin: 0;
+    border-radius: 10px 0 0 10px ;
+    border: 1px solid white;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/dolar.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#usd:hover {
+    border: none;
+    cursor: pointer;
+    background-color: rgb(17, 163, 17);
+}
+
+#eur {
+    background-color: rgb(14, 131, 131);
+    margin: 0;
+    border: 1px solid white;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/euro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#eur:hover {
+    border: none;
+    cursor: pointer;
+    background-color: rgb(17, 163, 17);
+}
+
+#btc{
+    margin: 0;
+    background-color: rgb(14, 131, 131);
+    border-radius: 0 10px 10px 0;
+    border: 1px solid white;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/bitcoin.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#btc:hover {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(17, 163, 17);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    font-size: 24px;
+}
+
+span {
+    animation: colors 5s infinite;
+}
+
